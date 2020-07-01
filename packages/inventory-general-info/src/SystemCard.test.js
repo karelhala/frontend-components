@@ -109,7 +109,7 @@ describe('SystemCard', () => {
             wrapper.find('a[href$="display_name"]').first().simulate('click', {
                 preventDefault: () => undefined
             });
-            expect(wrapper.find('TextInputModal[title="Edit name"]').first().instance().props.isOpen).toBe(true);
+            expect(wrapper.find('TextInputModal[title="Edit Display name"]').first().instance().props.isOpen).toBe(true);
             expect(wrapper.find('TextInputModal[title="Edit Ansible host"]').first().instance().props.isOpen).toBe(false);
         });
 
