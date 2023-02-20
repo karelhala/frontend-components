@@ -5,6 +5,7 @@ function router(target, useCloud) {
             case 'qa.foo.redhat.com':    return `https://qa.${useCloud ? 'cloud' : 'console'}.redhat.com/`;
             case 'stage.foo.redhat.com': return `https://${useCloud ? 'cloud' : 'console'}.stage.redhat.com/`;
             case 'prod.foo.redhat.com':  return `https://${useCloud ? 'cloud' : 'console'}.redhat.com/`;
+            case 'dev.foo.redhat.com':  return `https://${useCloud ? 'cloud' : 'console'}.redhat.com/`;
             default: return target;
         }
     };

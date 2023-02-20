@@ -9,7 +9,7 @@ const { logError, validateFECConfig } = require('../src/scripts/common');
 
 function patchHosts() {
     const command = `
-    for host in prod.foo.redhat.com stage.foo.redhat.com qa.foo.redhat.com ci.foo.redhat.com
+    for host in prod.foo.redhat.com stage.foo.redhat.com qa.foo.redhat.com ci.foo.redhat.com dev.foo.redhat.com
 do
     grep -q $host /etc/hosts 2>/dev/null
     if [ $? -ne 0 ]
